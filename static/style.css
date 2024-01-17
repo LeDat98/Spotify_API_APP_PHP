@@ -1,0 +1,277 @@
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#Logoname_container{
+    width: 100%;
+    height: 57px;
+    position: relative; 
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    display: flex;
+    top:0px;
+}
+#logo_images{
+    position: absolute;
+    width: 17%;
+    height: auto;
+    left: 2%;
+    top: calc(50% - 57px/2);
+    background: url(SVLogo.png);
+}
+#SoundVoyage{
+    position: absolute;
+    width: 60%;
+    height: 29px;
+    right: 20%;
+    top: calc(50% - 29px/2);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    color: rgba(111, 0, 255, 0.66);
+}
+#Tone1{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    right: 7%;
+    top: 14%;
+    background: url(tone.png);
+    transform: rotate(-0.79deg);
+}
+#ControlContainer{
+    padding: 20px; 
+    left: 16px; 
+    top: 18px; 
+    position: absolute; 
+    background: rgba(255, 255, 255, 0.47); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    gap: 98px; 
+    display: inline-flex;
+    width: 14.5%;
+    height: 90%
+}
+#suggestions {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    z-index: 100;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 98%;
+    top:121%;
+    left: 2%;
+    background-color: #6f00ffe2;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#suggestions li {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#suggestions li:hover {
+    background-color: rgba(158, 85, 254, 0.532);
+    border-radius: 10px;
+    margin: 5px;
+}
+.suggestion-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.suggestion-text {
+    display: flex;
+    align-items: center;
+    background-color: rgba(158, 85, 254, 0);
+    color: white;
+   
+}
+.suggestion-artist {
+    font-size: 0.8em;
+    color: white;
+    margin-left: 5px;
+}
+.volume-control {
+    position: relative;
+    display: inline-block;
+    left: 2%;
+    top: 12%;
+}
+
+.volume-slider {
+    width: 80px;
+    height: 6px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.volume-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.volume-control:hover .volume-slider {
+    opacity: 1; /* Hiển thị thanh trượt khi di chuột vào */
+}
+#seekSlider_container{
+    width: 100%;
+    height: 55px;
+    position: relative;
+    top: 10%;
+    left: 3%;
+}
+#PrivateSpace{
+
+position: absolute;
+left: 23%;
+right: 8.98%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Karma';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 36px;
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#Home{
+    position: absolute;
+    left: 2%;
+    right: 74.92%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Karma';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 36px;
+    color: rgba(111, 0, 255, 0.66);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#Logout{
+    position: absolute;
+    left: 65%;
+    right: 8.98%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Karma';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#Connect_Spotify{
+    width: 219px;
+    height: 50px;
+    background-color: rgba(110.87, 0, 255, 0.66);
+    color: rgb(255 255 255);
+    font-size: 26px;
+    font-family: Inika;
+    font-weight: 700;
+    word-wrap: break-word;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    border-radius: 11px;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+#MusicName{
+    width: 182px;
+    height: 60px;
+    color: rgba(110.87, 0, 255, 0.66);
+    font-size: 21px;
+    font-family: Inika;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+        /* Thêm các quy tắc CSS mới ở đây mà không xóa quy tắc cũ */
+        #KindofmusicContainer {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            z-index: 100;
+            max-height: 400px;
+            overflow-y: auto;
+            width: 60%;
+            top: 520px;
+            left: 27%;
+            background-color: #6f00ffe2;
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .row {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            background-color: #1508256b;
+            color: white;
+            border-radius: 10px;
+        }
+        .row:hover{
+            background-color: #876ea46b;
+        }
+
+        .row .td1 {
+            flex: 0 0 50px;
+            text-align: center; /* Căn giữa số thứ tự */
+        }
+
+        .row .td2 {
+            flex: 0 0 50px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .row .td3,
+        .row .td4 {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .row .td5 {
+            flex: 0 0 70px;
+        }
+
+        .delete_icon{
+            width: 35px;
+            height: 35px;
+        }
+        /* Thêm bất kỳ quy tắc CSS nào khác cần thiết ở đây */
+        #PlayList:hover{
+            width: 30px;
+            height: 30px;
+        }
